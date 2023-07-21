@@ -47,6 +47,12 @@ console.log("Hello from Injection")
 
   })
 
+  body.addEventListener('click', (e)=>{
+    const target = e.target
+    chrome.runtime.sendMessage({type: 'save', text: 'SAVED'})
+  })
+
+
 
   body.addEventListener("mouseleave", function(e) {
     highlight.remove();

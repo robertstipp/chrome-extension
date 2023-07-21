@@ -1,3 +1,17 @@
 /* body {
   width: 1000px; 
 } */
+
+body {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.active {
+  background-color: red;
+}
+
+.saved {
+  background-color: green;
+}
